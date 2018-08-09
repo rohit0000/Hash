@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1533824763 source:c:\users\rohit\documents\programming\hash\main.cpp
+	<iostream>
+	"hash.h"
+	<string>
+	<cstdlib>
+
+1533826427 c:\users\rohit\documents\programming\hash\hash.h
+	<iostream>
+
