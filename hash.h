@@ -61,10 +61,16 @@ int hash::remove(int key_i)
             nodesArray[hashVal].head = NULL;
             return 0;
         }
-        else if (temp!=NULL && prev->val == key_i){
+        else if(temp!=NULL && prev->val == key_i){
+            nodesArray[hashVal].head = nodesArray[hashVal].head->next;
+            return 0;
+        }
+        else if (temp!=NULL && temp->val == key_i){
             prev->next = temp->next;
             return 0;
         }
+        prev = prev->next;
+        temp = temp->next;
     }
     return -1;
 }
